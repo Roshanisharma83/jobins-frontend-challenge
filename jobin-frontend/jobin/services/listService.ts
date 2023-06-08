@@ -1,5 +1,7 @@
 import { List } from "../types/listType"
-//import { Lists } from '@/__mock__/dashboardlist.data'
+// import { Lists } from '@/__mock__/dashboardlist.data'
+//import { Lists } from '@/__mocks__/dashboardlist.data'
+
 
 
 
@@ -17,7 +19,10 @@ export const DashboardService = {
         return Promise.reject(error)
       }
     },
+    
   }
+
+
 
 // function Lists(Lists: any): Promise<{ data: List[] }> {
 //     throw new Error("Function not implemented.")

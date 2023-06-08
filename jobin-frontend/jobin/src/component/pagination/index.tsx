@@ -1,46 +1,36 @@
 
+import { ArrowBackIos, ArrowForward, ArrowForwardIos, ArrowOutwardOutlined } from '@mui/icons-material';
 import React from 'react';
 
 
-const Pagination =  ( )=> {
-//   const pages = Array.from({ length: totalPages }, (_, i) => i + 1);
+const Pagination =  ( ) => {
+    return(
+        <nav aria-label="Page navigation example">
+            <ul className="inline-flex -space-x-px">
+                <li>
+                <a href="#" className=" bg-white px-3 py-2 ml-0 leading-tight text-gray-500 bg-white border rounded-l-lg"><ArrowBackIos/></a>
+                </li>
+                <li>
+                <a href="#" className="px-3 py-2 leading-tight text-gray-500 bg-white border">1</a>
+                </li>
+                <li>
+                <a href="#" className="px-3 py-2 leading-tight text-gray-500 bg-white border ">2</a>
+                </li>
+                <li>
+                <a href="#" aria-current="page" className="px-3 py-2 text-gray-600 border bg-blue-50 ">3</a>
+                </li>
+                <li>
+                <a href="#" className="px-3 py-2 leading-tight text-gray-500 bg-white border  ">4</a>
+                </li>
+                <li>
+                <a href="#" className="px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300">5</a>
+                </li>
+                <li>
+                <a href="#" className="px-3 py-2 leading-tight text-gray-500 bg-white border rounded-r-lg "><ArrowForwardIos/></a>
+                </li>
+            </ul>
+        </nav>
+    )
+}
 
-//   return (
-//     <nav className="flex justify-center my-4">
-//       <ul className="flex space-x-2">
-//         <li>
-//           <button
-//             disabled={currentPage === 1}
-//             onClick={() => onPageChange(currentPage - 1)}
-//             className="px-3 py-1 bg-gray-200 rounded-md"
-//           >
-//             Previous
-//           </button>
-//         </li>
-//         {pages.map((page) => (
-//           <li key={page}>
-//             <button
-//               onClick={() => onPageChange(page)}
-//               className={`px-3 py-1 rounded-md ${
-//                 page === currentPage ? 'bg-blue-500 text-white' : 'bg-gray-200'
-//               }`}
-//             >
-//               {page}
-//             </button>
-//           </li>
-//         ))}
-//         <li>
-//           <button
-//             disabled={currentPage === totalPages}
-//             onClick={() => onPageChange(currentPage + 1)}
-//             className="px-3 py-1 bg-gray-200 rounded-md"
-//           >
-//             Next
-//           </button>
-//         </li>
-//       </ul>
-//     </nav>
-//   );
-};
-
-export default Pagination;
+export default Pagination

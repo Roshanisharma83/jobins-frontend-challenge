@@ -22,13 +22,7 @@ const Dashboard: React.FC = () => {
                             alt={'logo'}
                         />
                         <span className="text-gray-600 text-3xl">JoBins</span>
-                        <Fragment>
-                                        {open ? (
-                                          <i className="pl-8"><MenuOutlined/></i>
-                                        ) : (
-                                          <i className="px-1 py-1 fas fa-angle-down"></i>
-                                        )}
-                                      </Fragment>
+                        
                         <div>
                             
                         </div>
